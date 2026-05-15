@@ -2,22 +2,24 @@
 
 Modern fork of `connect-flash` with a safe `Array.isArray` fallback.
 
-Este pacote aplica uma pequena correção para remover o uso de `util.isArray()`,
-que está deprecated em Node.js, mantendo o comportamento original de flash
-messages e adicionando compatibilidade com Node.js modernos.
+This package applies a small fix to remove the use of `util.isArray()`,
+which is deprecated in Node.js, while preserving the original flash
+messages behavior and adding compatibility with modern Node.js versions.
 
-## O que mudou
+## What Changed
 
-- O arquivo `lib/flash.js` foi atualizado para usar `Array.isArray()` com
-  fallback legível e compatível.
-- Os testes foram migrados para um runner moderno que funciona em Node.js atual.
-- O pacote foi renomeado para `connect-flash-now` para diferenciar do original.
+* The `lib/flash.js` file was updated to use `Array.isArray()` with
+  a readable and compatible fallback.
+* The tests were migrated to a modern runner that works with current Node.js versions.
+* The package was renamed to `connect-flash-now` to differentiate it from the original.
 
-## Instalação
+## Installation
 
-    $ npm install connect-flash-now
+```
+$ npm install connect-flash-now
+```
 
-## Uso moderno (Express / Node.js atuais)
+## Modern Usage (Express / Current Node.js Versions)
 
 ```js
 const express = require('express');
@@ -48,29 +50,29 @@ app.listen(3000, () => {
 });
 ```
 
-## Exemplos
+## Examples
 
-Este repositório inclui exemplos de uso para Express 2, 3, 4 e 5 em `examples/`.
+This repository includes usage examples for Express 2, 3, 4 and 5 in `examples/`.
 
-- `examples/express2`
-- `examples/express3`
-- `examples/express4`
-- `examples/express5`
+* `examples/express2`
+* `examples/express3`
+* `examples/express4`
+* `examples/express5`
 
-## Testes
+## Tests
 
-Execute os testes com:
+Run the tests with:
 
 ```bash
 npm install
 npm test
 ```
 
-O comando `npm test` executa `test/run-tests.js`.
+The `npm test` command runs `test/run-tests.js`.
 
-## Licença
+## License
 
-Este pacote está licenciado sob MIT.
+This package is licensed under the MIT License.
 
 > Original License: MIT
 > Copyright (c) 2012-2013 Jared Hanson
