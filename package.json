@@ -1,0 +1,24 @@
+{
+  "name": "connect-flash-now",
+  "version": "0.1.0",
+  "description": "Modern fork of connect-flash with a safe Array.isArray fallback.",
+  "keywords": ["connect", "express", "flash", "messages", "middleware", "node"],
+  "author": {
+    "name": "Edivan da Silva Junior",
+    "email": "edivanjr13@gmail.com"
+  },
+  "license": "MIT",
+  "main": "./lib",
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md",
+    "test/run-tests.js"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/run-tests.js"
+  },
+  "engines": { "node": ">= 0.4.0" }
+}
